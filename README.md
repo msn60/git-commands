@@ -1,10 +1,6 @@
 
 # Git commands
 
-## git cheat sheet
-
-You can find a Persian git cheat sheet here: [Persian git cheat sheet](https://quera.org/college/cheatsheet/git).
-
 ## Basic Git Settings
 
 * Set name for all projects: `git config --global user.name <username>`
@@ -75,14 +71,20 @@ You can find a Persian git cheat sheet here: [Persian git cheat sheet](https://q
 ---------
 
 
+## git cheat sheet & useful resources
 
-
+* [Learn git concept](https://github.com/UnseenWizzard/git_training)
+* [Practical Git Guide](https://github.com/sadanandpai/git-guide)
+* [Git Cheatsheet (Basics)](https://github.com/0nn0/git-basics-cheatsheet)
+* [Git Alias](https://github.com/GitAlias/gitalias)
+* [Git Commands](https://github.com/joshnh/Git-Commands)
+* [Useful Git Commands](https://github.com/bpassos-zz/git-commands)
+* [Git Extra Commands](https://github.com/unixorn/git-extra-commands)
+* [Lazy git](https://github.com/jesseduffield/lazygit)
+* You can find a Persian git cheat sheet here: [Persian git cheat sheet](https://quera.org/college/cheatsheet/git).
 
 ---------
 
-https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git
-https://stackoverflow.com/questions/11403407/git-asks-for-username-every-time-i-push
-https://stackoverflow.com/questions/8840551/configuring-user-and-password-with-git-bash
 
 
 

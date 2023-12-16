@@ -70,6 +70,31 @@
 
 ---------
 
+## Show and report commit history & customize output
+
+* Show list of all commits: `git log`
+* Show the last m commits: `git log -n <m>`
+* Show commits in one line and with graph: `git log --oneline --graph --decorate`
+* Show all of commits for an author: `git log --author=<UserName>`
+* Show authors with their commit counts: `git shortlog -nse`
+* Show colored log for each part of results: 
+```
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+```
+* Create a alias for colored log:
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
+```
+* Show all commits which have been changed the file: `git log -- <FileName>`
+
+
+### useful links:
+[customizing git history](https://dev.to/robertobutti/git-commit-history-customize-the-output-with-colors-lcc)
+[git log cheatsheet](https://www.hatica.io/blog/git-log-cheatsheet/)
+
+---------
+
 
 ## git cheat sheet & useful resources
 

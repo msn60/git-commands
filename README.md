@@ -99,6 +99,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ## git cheat sheet & useful resources
 
 * [Learn git concept](https://github.com/UnseenWizzard/git_training)
+* [A Visual and Practical Guide to Git](https://www.freecodecamp.org/news/gitting-things-done-book)
 * [Practical Git Guide](https://github.com/sadanandpai/git-guide)
 * [Git Cheatsheet (Basics)](https://github.com/0nn0/git-basics-cheatsheet)
 * [Git Alias](https://github.com/GitAlias/gitalias)

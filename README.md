@@ -75,7 +75,7 @@ Host gitlab.com
 ```
     * After this configuration, you need to check your ssh connection with: `ssh -T git@gitlab.com`
     * If you have problem, you can active verbose for git: `GIT_SSH_COMMAND="ssh -v" git clone git@gitlab.com:username/repo-name.git`
-    * You can also check it with more level in verbose: `ssh -vvvT git@gitlab.com`
+    * You can also check it with more level in verbose: `ssh -vT git@gitlab.com` or `ssh -vvvT git@gitlab.com`
   * 
 
 ---------
@@ -146,6 +146,8 @@ git remote add upstream https://github.com/username/upstream-repo-name.git
 * List all of stashes: `git stash list`
 * Restore the specific stash: `git stash apply <NAME>` 
 * Restore all stashes also with files in .gitignore files: `git stash --all`
+* To reset all change back to HEAD: `git reset --hard HEAD`
+* To reset changes back to 1 commit before HEAD: `git reset --hard HEAD~1`
 
 ---------
 
@@ -171,6 +173,8 @@ git remote add upstream https://github.com/username/upstream-repo-name.git
 
   e.g. `git fetch origin main`
 
+* To see the state of your branch with fetched branches, you can use: `git status`
+* To merge all of changes with your branch (after `git fetch`): `git merge`
 * The command of `git pull` is a combination of git fetch and git merge
 * Get changes on remote server and merge with local server for all branch: `git pull --all`
 * Get changes on remote server and merge with local server for a branch: `git pull origin <branch_name>` or `git checkout <branch_name >` then `git pull`

@@ -280,6 +280,11 @@ git pull origin main --ff-only
   - If you want to synchronize only when the changes are linear, Fast-Forward Only is an option, though it’s less common in multi-branch projects.
   - For general use, especially if you want to keep both sets of changes intact, merge is typically recommended (git config pull.rebase false).
 
+
+### useful links:
+- [merge vs rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [merge vs rebase in stackoverflow](https://stackoverflow.com/questions/804115/when-do-you-use-git-rebase-instead-of-git-merge)
+
 ---------
 
 ## Communicate with remote repository

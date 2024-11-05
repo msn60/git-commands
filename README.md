@@ -64,7 +64,9 @@ Host gitlab.com
     IdentityFile ~/.ssh/id_ed25519_gitlab
     ProxyCommand nc -x 127.0.0.1:1086 %h %p
 ```
-    * If you need, you can add port to ssh like this:
+
+* If you need, you can add port to ssh like this:
+
 ```bash
 Host gitlab.com
     HostName gitlab.com
@@ -73,10 +75,9 @@ Host gitlab.com
     IdentityFile ~/.ssh/id_ed25519_gitlab
     ProxyCommand nc -x 127.0.0.1:1086 %h %p
 ```
-    * After this configuration, you need to check your ssh connection with: `ssh -T git@gitlab.com`
-    * If you have problem, you can active verbose for git: `GIT_SSH_COMMAND="ssh -v" git clone git@gitlab.com:username/repo-name.git`
-    * You can also check it with more level in verbose: `ssh -vT git@gitlab.com` or `ssh -vvvT git@gitlab.com`
-  * 
+  * After this configuration, you need to check your ssh connection with: `ssh -T git@gitlab.com`
+  * If you have problem, you can active verbose for git: `GIT_SSH_COMMAND="ssh -v" git clone git@gitlab.com:username/repo-name.git`
+  * You can also check it with more level in verbose: `ssh -vT git@gitlab.com` or `ssh -vvvT git@gitlab.com`
 
 ---------
 

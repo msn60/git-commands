@@ -168,11 +168,16 @@ git remote add upstream https://github.com/username/upstream-repo-name.git
   The message you received means that your local branch and the remote main branch have diverged. Both branches have changes, and they’ve moved in different directions, so Git requires you to specify how to reconcile them. Git provides three options for handling this situation, each representing a different approach to merging or synchronizing the changes. Here’s a breakdown of each option
 
    1. **Merge**
+
     Git moves your changes to the top of the main branch’s changes, reorganizing them as if your changes happened after the main branch’s latest changes. This results in a cleaner, more linear history.
+    
     **Pros**:
+
       * The Git history is cleaner and more linear, making it easier to read.
       * There are no additional merge commits, which can simplify history in large projects.
+    
     **Cons**:
+
       * Rebase can modify and rewrite your commits, which may not be ideal in certain projects or for some developers.
       * If multiple developers are working on the same branch, rebase may lead to more conflicts.
     
@@ -202,11 +207,16 @@ git pull origin main --no-rebase
 ```
 
    2. **Rebase**
-   his command configures Git to use rebase instead of merge. With rebase, Git moves your changes to the top of the main branch’s changes, reorganizing them as if your changes happened after the main branch’s latest changes. This results in a cleaner, more linear history.
+   
+   This command configures Git to use rebase instead of merge. With rebase, Git moves your changes to the top of the main branch’s changes, reorganizing them as if your changes happened after the main branch’s latest changes. This results in a cleaner, more linear history.
+    
     **Pros**:
+
       * The Git history is cleaner and more linear, making it easier to read.
       * There are no additional merge commits, which can simplify history in large projects.
+    
     **Cons**:
+
       * Rebase can modify and rewrite your commits, which may not be ideal in certain projects or for some developers.
       * If multiple developers are working on the same branch, rebase may lead to more conflicts.
 
@@ -233,12 +243,16 @@ git pull origin main --rebase
 
 ```
    3. **Fast-Forward Only**
+   
    This command configures Git to pull only if it can perform a fast-forward merge. This means that if your branch is ahead of the main branch, Git will not allow the pull and will require you to handle the changes manually.
 
     **Pros**:
+
       * Git history remains clean and simple, only allowing pulls when changes are linear.
       * This method doesn’t add any extra commits (like merge or rebase commits).
+  
     **Cons**:
+
       * If both branches have simultaneous changes, this method is not effective, as the pull will not be possible.
   
 ```bash 
@@ -261,6 +275,7 @@ git pull origin main --ff-only
 ```
 
   **Comparison and Recommendation**
+  
     - If you prefer a clean and linear history to avoid clutter, Rebase is a good choice, especially in larger projects with many branches.
     - If you want a clear history where all changes are shown without rewriting any commits, Merge is often preferable.
     - If you want to synchronize only when the changes are linear, Fast-Forward Only is an option, though it’s less common in multi-branch projects.

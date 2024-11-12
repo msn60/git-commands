@@ -163,6 +163,8 @@ git remote add upstream https://github.com/username/upstream-repo-name.git
 * Merge with current branch: `git merge <branch_name>`
 * Rebase with current branch: `git rebase <branch_name>`
 * Remove a branch: `git branch -d <branch_name>`
+* Get last list of remote branch: `git remote prune origin`
+* To remove a branch from remote repo: `git push origin --delete <branch_name_in_remote>`
 * Show just the current branch_name you ar on: `git rev-parse --abbrev-ref HEAD` or `git branch --show-current`
 
   ###  Divergent branches
@@ -324,6 +326,12 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 ```
 * Show all commits which have been changed the file: `git log -- <FileName>`
+* **Remove a file from tracking**:
+  Sometimes you need to remove a file from tracking when it tracked before. In this case, first you must need to remove from tracking cache and then add it in `.gitignore` file
+  * To remove file from tracking: `git rm --cached logs/basket/service.log`
+  * Then you need to add this file to `.gitignore`
+  * Now you can apply a commit 
+* 
 
 
 ### useful links:
